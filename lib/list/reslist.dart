@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resumeapp/list/reslogin.dart';
 import 'package:resumeapp/list/ressign.dart';
 
 class Reslit extends StatelessWidget {
@@ -35,7 +36,7 @@ Navigator.push(context, MaterialPageRoute(builder: (context)=>Ressign()));
                   ),
                   onPressed: ()
                   {
-
+Navigator.push(context, MaterialPageRoute(builder: (context)=>Reslogin()));
                   }, child: Text("LOGIN")),
             ],
           ),
