@@ -8,6 +8,10 @@ class Reslogin extends StatefulWidget {
 }
 
 class _ResloginState extends State<Reslogin> {
+
+  TextEditingController n1=new TextEditingController();
+  TextEditingController n2=new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,6 +25,7 @@ class _ResloginState extends State<Reslogin> {
             children: [
               SizedBox(height: 30,),
               TextField(
+                controller: n1,
                 decoration: InputDecoration(
                   labelText: "emailid",
                   border: OutlineInputBorder()
@@ -28,11 +33,17 @@ class _ResloginState extends State<Reslogin> {
               ),
               SizedBox(height: 30,),
               TextField(
+                controller: n2,
                 decoration: InputDecoration(
                     labelText: "Password",
                     border: OutlineInputBorder()
                 ),
-              )
+              ),
+              SizedBox(height: 30,),
+              ElevatedButton(onPressed: ()
+                  {
+
+                  }, child: Text("LOGIN"))
             ],
           ),
         ),
